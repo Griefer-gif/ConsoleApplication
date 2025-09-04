@@ -1,19 +1,19 @@
+//"Copyright [year] <Copyright Owner>"
+
 #include <iostream>
 #include<cmath>
 
 using namespace std;
 
-int main()
-{
+int main(){
     bool state = true;
     short option = 0;
     while (true) {
-
         option = 0;
         cout << "Chose an option" << endl
              << "0. End" << endl
              << "1. Conversion" << endl
-             << "2. Math" << endl ;
+             << "2. Math" << endl;
         cin >> option;
 
         if (cin.fail()) {
@@ -22,19 +22,14 @@ int main()
             cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
             continue;
         }
-        else
-        {
-            if (option > 2 || option < 0)
-            {
+        else{
+            if (option > 2 || option < 0){
                 cout << endl << "Opção invalida" << endl << endl;
                 continue;
-            }
-            else {
-                if (option == 0)
-                {
+            }else {
+                if (option == 0){
                     break;
-                }
-                else {
+                }else {
                     cout << endl << "valeu bro" << endl;
                 }
             }
