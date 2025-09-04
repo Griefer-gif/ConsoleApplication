@@ -32,8 +32,10 @@ int main(){
                     break;
                 }else if(option == 1){
                     int x{};
-                    cout << "ta meu mano fala quantos graus ta ai em farenthetet:" << endl;  cin >> x; cout << endl << "é isso ai ó " << x * 100 << endl;
-                                                cout << "ihhaaaaaaa"
+                    cout << "ta meu mano fala quantos graus ta ai em farenthetet:" << endl;  
+                    cin >> x; 
+                    cout << endl << "é isso ai ó " << x * 100 << endl;
+                    cout << "ihhaaaaaaa";
                     
 
                 }
