@@ -17,7 +17,7 @@ int main()
         cin >> option;
 
         if (cin.fail()) {
-            cout << endl << "Se é burro cara" << endl << endl;
+            cout << endl << "Favor inserir numero valido" << endl << endl;
             cin.clear();
             cin.ignore(std::numeric_limits<streamsize>::max(), '\n');
             continue;
@@ -26,11 +26,17 @@ int main()
         {
             if (option > 2 || option < 0)
             {
-                cout << endl << "Se é burro cara" << endl << endl;
+                cout << endl << "Opção invalida" << endl << endl;
                 continue;
             }
             else {
-                cout << "valeu mano" << endl;
+                if (option == 0)
+                {
+                    break;
+                }
+                else {
+                    cout << endl << "valeu bro" << endl;
+                }
             }
         }
         
