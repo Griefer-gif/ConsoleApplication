@@ -10,6 +10,7 @@ int main(){
     short option = 0;
     while (true) {
         option = 0;
+
         cout << "Chose an option" << endl
              << "0. End" << endl
              << "1. Conversion" << endl
