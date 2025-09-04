@@ -31,7 +31,7 @@ int main(){
                 if (option == 0){
                     break;
                 }else {
-                    cout << endl << "valeu meu chapa" << endl;
+                    cout << endl << "valeu meu amigao" << endl;
                 }
             }
         }
