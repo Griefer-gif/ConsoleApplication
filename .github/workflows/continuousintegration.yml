@@ -1,12 +1,9 @@
 name: cpp-linter
 
 on:
-  push:
-    paths:
-      - "main"
   pull_request:
-    paths:
-      - "main"
+    branches:
+	- main
 
 
 jobs:
