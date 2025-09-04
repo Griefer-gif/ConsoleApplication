@@ -1,18 +1,32 @@
 #include <iostream>
+#include<cmath>
 
 using namespace std;
 
 int main()
 {
-    int total = 11;
+    bool state = true;
+    while (true) {
 
-    cout << "Enter the two values:";
-    int x;
-    int y;
+        short option{};
+        cout << "Chose an option" << endl
+             << "1. Conversion" << endl
+             << "2. Math" << endl;
+        cin >> option;
 
-    cin >> x >> y;
-    
-    cout << "Final value is: " << x + y;
-    
+        if (option > 2 || option < 1)
+        {
+            option = 0;
+        }
+        else
+        {
+            cout << "Poggers";
+            break;
+        }
+        
+    }
+
+    int option;
+
     return 0;
 }
