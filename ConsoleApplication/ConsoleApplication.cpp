@@ -34,7 +34,7 @@ int main(){
                     int x{};
                     cout << "ta meu mano fala quantos graus ta ai em farenthetet:" << endl;  
                     cin >> x; 
-                    cout << endl << "é isso ai ó " << x * 100 << endl;
+                    cout << endl << "é isso ai ó " << x * 10 << endl;
                     cout << "ihhaaaaaaa";
                     
 
