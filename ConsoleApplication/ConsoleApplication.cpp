@@ -5,9 +5,16 @@
 
 using namespace std;
 
+void celsiusToFarenheit(float celsius);
+void farenheitToCelsius(float farenheit);
+
 int main(){
     bool state = true;
     short option = 0;
+    short optionCon = 0;
+    float celsiusInput;
+    float farenheitInput;
+
     while (true) {
         option = 0;
 
@@ -31,13 +38,37 @@ int main(){
                 if (option == 0){
                     break;
                 }else if(option == 1){
-                    int x{};
-                    cout << "ta meu mano fala quantos graus ta ai em farenthetet:" << endl;  
-                    cin >> x; 
-                    cout << endl << "é isso ai ó " << x * 100 << endl;
-                    cout << "ihhaaaaaaa";
-                    
 
+                    while (true) {
+                        cout << "Chose an option" << endl
+                            << "0. Back" << endl
+                            << "1. Celsius to ferenheit" << endl
+                            << "2. Farenjheito to celsius" << endl;
+                        cin >> optionCon;
+
+                        if (optionCon > 2 || optionCon < 0) {
+                            cout << endl << "Opção invalida" << endl << endl;
+                            continue;
+                        }
+                        else {
+                            if (optionCon == 0)
+                            {
+                                break;
+                            }
+                            else if (optionCon == 1)
+                            {
+                                cout << "type the value in celsius" << endl;
+                                cin >> celsiusInput;
+                                celsiusToFarenheit(celsiusInput);
+                            }
+                            else if (optionCon == 2)
+                            {
+                                cout << "type the value in farentehit" << endl;
+                                cin >> farenheitInput;
+                                farenheitToCelsius(farenheitInput);
+                            }
+                        }
+                    }
                 }
             }
         }
