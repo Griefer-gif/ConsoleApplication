@@ -44,7 +44,6 @@ int main(){
                 if (option == 0){
                     break;
                 }else if(option == 1){
-
                     while (true) {
                         optionCon = 0;
                         cout << "Chose an option" << endl
